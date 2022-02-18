@@ -7,13 +7,13 @@ test('alive healthy', () => {
 });
 
 test('alive wounded', () => {
-    const characters = { name: 'Маг', health: 30 };
-    const result = alive(characters);
-    expect(result).toBe('wounded');
-  });
+  const characters = { name: 'Маг', health: 30 };
+  const result = alive(characters);
+  expect(result).toBe('wounded');
+});
 
 test('alive critical', () => {
-    const characters = { name: 'Маг', health: 5 };
-    const result = alive(characters);
-    expect(result).toBe('critical');
+  const characters = { name: 'Маг', health: 5 };
+  const result = alive(characters);
+  expect(result).toBe('critical');
 });
